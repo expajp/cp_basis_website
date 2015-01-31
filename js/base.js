@@ -12,6 +12,22 @@ $(document).ready(function(){
         return false;
     });
     
+    /*ページ内リンクのアニメーション化*/
+    $('a[href^=#]').click(function() {
+        var speed = 500;
+        var href= $(this).attr("href");
+        
+        var parts = href.split("#");
+        var target = parts[1];
+        console.log(target);
+        
+        var position = Math.max($('a[name='+target+']').offset().top-45, 0);
+
+        /*スクロール*/
+        $('body, html').animate({scrollTop:position}, speed, 'swing');
+        return false;
+    });
+    
 });
 
 /*foundation 5*/
@@ -21,12 +37,12 @@ $(document).foundation();
 $("#main").fadeMover({
         'inSpeed': 250,
 		'outSpeed': 250,
-		'inDelay' : '50',
-		'outDelay' : '50'
+		'inDelay' : '0',
+		'outDelay' : '0'
 });
 $("#footer").fadeMover({
         'inSpeed': 250,
 		'outSpeed': 250,
-		'inDelay' : '50',
-		'outDelay' : '50'
+		'inDelay' : '0',
+		'outDelay' : '0'
 });

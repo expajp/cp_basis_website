@@ -1,6 +1,10 @@
 @charset "utf-8";
 @import url("designbase.css");
 
+#day{
+    margin-bottom: 10px;
+}
+
 .panel ol > li{
     font-weight: bold;
     margin-bottom: 10px;

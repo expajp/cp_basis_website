@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+/*全体*/
+body {
+    background-color: #CCCCCC;
+}
+
+body a:visited {
+  color: #008cba;
+}
+
+body a:hover{
+    color: #006C9A;
+}
+
+/* ヘッダ */
+
+/*色を変更（デフォルトは黒）*/
+.contain-to-grid,
+.top-bar,
+.top-bar-section ul,
+.top-bar-section ul li > a,
+.top-bar.expanded .title-area,
+.top-bar-section .title-area .name h1 a,
+.top-bar-section #navbar li a {
+    background-color: #B0002C;
+}
+
+/*マウスオーバー時の色の設定*/
+.title-area .name h1 a:hover,
+.top-bar-section #navbar li a:hover {
+    background-color: #A0001C;
+}
+
+/*現在訪問中のページの色の変更*/
+.top-bar-section #navbar li.active a {
+    background-color: #F9F9FF;
+    color: #B0002C;
+}
+
+.top-bar-section #navbar li.active a:hover {
+    background-color: #E9E9EF;
+}
+
+/*マウスオーバーで表示されるフキダシの設定*/
+#navbar li div{
+    margin: 15px 0;
+    padding: 5px 10px;
+}
+
+#navbar li div p{
+    font-size: 14px;
+    margin: auto 0;
+}
+
+
+/*メイン*/
+#main{
+    background-color: #F9F9FF;
+    padding-bottom: 20px;
+}
+
+
+/*パンくずリスト*/
+.breadcrumbs{
+    margin: 10px auto;
+}
+
+.breadcrumbs .current a {
+  color: #333333;
+}
+
+
+/*PageTop*/
+#pagetop{
+    text-align: right;
+}
+#pagetop a{
+    color: #222222;
+    margin-right: 10px;
+}
+
+
+/*フッター*/
+
+/*背景色の設定*/
+#footer{
+    background-color: #B0002C;
+}
+
+/*レイアウトの設定*/
+#footer #copyright{
+    color: #F9F9FF;
+    margin: 15px auto 20px auto;
+    text-align: center;
+}
+
+/*行間の設定*/
+#footer #copyright p{
+    margin: 0;
+}
+
+/*リンクの設定*/
+#footer #copyright p a{
+    color: #F9F9FF;
+}
+
+#footer #copyright p a:hover,a:visited{
+    color: #D9D9DF;
+}

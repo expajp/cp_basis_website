@@ -11,4 +11,22 @@ $(document).ready(function(){
         $('body, html').animate({ scrollTop: 0 }, 500);
         return false;
     });
+    
+});
+
+/*foundation 5*/
+$(document).foundation();
+
+/*jQuery fademover*/
+$("#main").fadeMover({
+        'inSpeed': 250,
+		'outSpeed': 250,
+		'inDelay' : '50',
+		'outDelay' : '50'
+});
+$("#footer").fadeMover({
+        'inSpeed': 250,
+		'outSpeed': 250,
+		'inDelay' : '50',
+		'outDelay' : '50'
 });

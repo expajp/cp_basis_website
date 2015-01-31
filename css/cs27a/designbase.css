@@ -16,11 +16,12 @@ body a:hover{
 /* ヘッダ */
 
 /*色を変更（デフォルトは黒）*/
+/*オーバーライドしてるのでセレクタの指定が美しくないです申し訳ない*/
 .contain-to-grid,
 .top-bar,
+.top-bar.expanded .title-area,
 .top-bar-section ul,
 .top-bar-section ul li > a,
-.top-bar.expanded .title-area,
 .top-bar-section .title-area .name h1 a,
 .top-bar-section #navbar li a {
     background-color: #B0002C;

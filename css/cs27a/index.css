@@ -3,8 +3,7 @@
 @import url("whatsnew.css");
 
 /*スライドショー*/
-.example-orbit li img{
-    display: block;
+.orbit-container .orbit-slides-container img{
     margin: 0 auto;
 }
 

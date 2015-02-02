@@ -34,9 +34,9 @@ $(document).ready(function(){
 $(document).foundation();
 
 /*jQuery fademover*/
-$("#main").fadeMover({
-        'inSpeed': 250,
-		'outSpeed': 250,
+$("#main div").fadeMover({
+        'inSpeed': 500,
+		'outSpeed': 500,
 		'inDelay' : '0',
 		'outDelay' : '0'
 });

@@ -13,3 +13,12 @@
 .panel ol ul li {
     margin: 10px auto;
 }
+
+.panel table#schedule{
+    margin: 0 auto;
+}
+
+.panel td#month{
+    min-width: 80px;
+    text-align: center;
+}

@@ -45,3 +45,9 @@ $("#footer").fadeMover({
 		'inDelay' : '0',
 		'outDelay' : '0'
 });
+
+/* jQuery Sticky-Kit */
+$("#index").stick_in_parent({
+	offset_top: 60 
+});
+

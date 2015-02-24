@@ -122,6 +122,7 @@ $(document).ready(function(){
             /* 書き換え領域の初期化 */
             $("#archive_content").html("");
             $("#archive_index ul.disc").html("");
+            $("#archive_index_small ul.disc").html("");
             
             for(i=year;i>=startYear;i--){
                 
@@ -144,6 +145,7 @@ $(document).ready(function(){
                 /* リンクをインデックスに追加し、本文に反映 */
                 index.append(link);
                 $("#archives_index ul.disc").append(index);
+                $("#archives_index_small ul.disc").append(index);
             }
             
         }

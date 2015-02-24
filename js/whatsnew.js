@@ -107,7 +107,8 @@ $(document).ready(function(){
                 parentDiv.append(contentDiv);
 
                 /* 年ごとのパネルに子要素として格納 */
-                panels[data[0]].append(parentDiv);
+                var yearInt = parseInt(data[0], 10);
+                panels[yearInt].append(parentDiv);
 
                 /* 最新の{maxLinesInIndex}件はindex.htmlからでも見られるようにする */
                 if(i < maxLinesInIndex) ableToSeeInIndex.append(parentDiv);
@@ -121,8 +122,8 @@ $(document).ready(function(){
             
             /* 書き換え領域の初期化 */
             $("#archive_content").html("");
-            $("#archive_index ul.disc").html("");
-            $("#archive_index_small ul.disc").html("");
+            $("#archives_index ul.disc").html("");
+            $("#archives_index_small ul.disc").html("");
             
             for(i=year;i>=startYear;i--){
                 
@@ -137,6 +138,7 @@ $(document).ready(function(){
 
                 /* インデックスに各年へのページ内リンクを作成 */
                 var index = $("<li>");
+                var index_clone;
                 var link = $("<a>").attr("href", '#'+i).text(i);
                 
                 /* スクロールにアニメーションをつける*/
@@ -144,8 +146,9 @@ $(document).ready(function(){
                 
                 /* リンクをインデックスに追加し、本文に反映 */
                 index.append(link);
-                $("#archives_index ul.disc").append(index);
-                $("#archives_index_small ul.disc").append(index);
+                index_clone = index.clone();
+                $("#archives_index ul").append(index);
+                $("#archives_index_small ul").append(index_clone);
             }
             
         }

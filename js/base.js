@@ -16,7 +16,10 @@ $(document).ready(function(){
 	$("#index").stick_in_parent({
 		offset_top: 60 
 	});
-
+	$("#archives_index").stick_in_parent({
+		offset_top: 60 
+	});
+    
     /*ページ内リンクのアニメーション化*/
     $("#main a[href^=#]").click(function() {
         var speed = 500;
@@ -36,19 +39,19 @@ $(document).ready(function(){
     
 });
 
-/*foundation 5*/
-$(document).foundation();
-
-/*jQuery fademover*/
-$("#main div").fadeMover({
-        'inSpeed': 500,
-		'outSpeed': 500,
-		'inDelay' : '0',
-		'outDelay' : '0'
-});
-$("#footer").fadeMover({
-        'inSpeed': 250,
-		'outSpeed': 250,
-		'inDelay' : '0',
-		'outDelay' : '0'
-});
+	/*foundation 5*/
+	$(document).foundation();
+	
+	/*jQuery fademover*/
+	$("#main div").fadeMover({
+	        'inSpeed': 500,
+			'outSpeed': 500,
+			'inDelay' : '0',
+			'outDelay' : '0'
+	});
+	$("#footer").fadeMover({
+	        'inSpeed': 250,
+			'outSpeed': 250,
+			'inDelay' : '0',
+			'outDelay' : '0'
+	});

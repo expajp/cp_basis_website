@@ -92,7 +92,7 @@ $(document).ready(function(){
                 var dateDiv = $("<div>").addClass("large-2 medium-3 small-12 columns small-only-text-left")
                                         .attr("id", "date");
 
-                var contentDiv = $("<div>").addClass("large-10 medium-9 small-12 columns")
+                var contentDiv = $("<div>").addClass("large-10 medium-9 small-12 columns text-left")
                                            .attr("id", "content");
 
                 /* 日付用の文字列を作成し、dateDivの子として追加 */

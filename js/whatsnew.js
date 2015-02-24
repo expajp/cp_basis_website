@@ -138,15 +138,18 @@ $(document).ready(function(){
 
                 /* インデックスに各年へのページ内リンクを作成 */
                 var index = $("<li>");
-                var index_clone;
+                var index_clone = index.clone();
                 var link = $("<a>").attr("href", '#'+i).text(i);
+                var link_clone = link.clone();
                 
                 /* スクロールにアニメーションをつける*/
                 link.click(animateScroll);
+                link_clone.click(animateScroll);
                 
                 /* リンクをインデックスに追加し、本文に反映 */
                 index.append(link);
-                index_clone = index.clone();
+                index_clone.append(link_clone);
+                
                 $("#archives_index ul").append(index);
                 $("#archives_index_small ul").append(index_clone);
             }

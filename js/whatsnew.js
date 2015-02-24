@@ -89,10 +89,10 @@ $(document).ready(function(){
                 /* 要素作成 */
                 var parentDiv = $("<div>").addClass("row");
 
-                var dateDiv = $("<div>").addClass("large-2 medium-2 small-3 columns")
+                var dateDiv = $("<div>").addClass("large-2 medium-3 small-12 columns small-only-text-left")
                                         .attr("id", "date");
 
-                var contentDiv = $("<div>").addClass("large-10 medium-10 small-9 columns")
+                var contentDiv = $("<div>").addClass("large-10 medium-9 small-12 columns")
                                            .attr("id", "content");
 
                 /* 日付用の文字列を作成し、dateDivの子として追加 */

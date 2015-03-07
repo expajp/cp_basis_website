@@ -4,19 +4,11 @@
 /*地図*/
 
 #googlemap {
-position: relative;
-padding-bottom: 75%;
-height: 0;
-margin-bottom: 20px;
-overflow: hidden;
-}
-
-#googlemap iframe {
-position: absolute;
-top: 0;
-left: 0;
-width: 100% !important;
-height: 100% !important;
+    position: relative;
+    padding-bottom: 75%;
+    height: 0;
+    margin-bottom: 20px;
+    overflow: hidden;
 }
 
 .panel h5{

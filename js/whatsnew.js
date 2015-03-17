@@ -57,7 +57,7 @@ function animateScroll(){
 
 
 /* ページ読み込みと同時に実行 */
-$(document).ready(function(){
+window.onload = function(){
     
     /* お知らせの配列 */
     var ableToSeeInIndex = $("#whatsnew");/* index.htmlの更新情報のパネル */
@@ -158,4 +158,4 @@ $(document).ready(function(){
     });
     
 
-}); 
+} 

@@ -62,12 +62,17 @@ body a:hover{
 #main{
     background-color: #F9F9FF;
     padding-bottom: 20px;
+    height: 1000px;
 }
 
+#main div.row div.columns{/*ページ読み込み時のフェード動作用*/
+    display: none;
+}
 
 /*パンくずリスト*/
 .breadcrumbs{
     margin: 10px auto;
+    display: none;
 }
 
 .breadcrumbs .current a {

@@ -22,7 +22,7 @@
 				$(pel).css("opacity", 0).delay(i*setting.inDelay).animate({opacity: 1}, setting.inSpeed);
 			}
 			if(setting.effectType == 1 || setting.effectType == 3) {
-				$('a:not(a[target=_blank])').click(function(event) {
+				$('a').click(function(event) {
 					var moveUrl = $(this).attr("href");
 					if(!$(this).hasClass(setting.nofadeOut) && moveUrl.charAt(0) != "#"){
 						event.preventDefault();

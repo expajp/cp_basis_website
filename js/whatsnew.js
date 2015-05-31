@@ -59,14 +59,6 @@ function animateScroll(){
 /* ページ読み込みと同時に実行 */
 $(document).ready(function(){
     
-    $(".breadcrumbs").css("display", "block"); /* パンくずリスト */
-    $("#main div").css("display", "block"); /* コンテンツ要素 */
-
-    $("#main").css("height", "auto"); /* コンテンツ表示領域の高さを元に戻す */
-    
-    console.log("このタイミングでのパンくずリストの表示状態");
-    console.log($(".breadcrumbs").css("display"));
-    
     /* お知らせの配列 */
     var ableToSeeInIndex = $("#whatsnew");/* index.htmlの更新情報のパネル */
     var panels = new Array();/* 年ごとのパネルを格納した配列 */

@@ -1,6 +1,11 @@
+*.zip
+*.lzh
+*.pdf
 sample.html
 template.html
 humans.txt
 .project
-whatsnew.csv
 Thumbs.db
+members-only/*
+yamamoto/*
+lecture/*

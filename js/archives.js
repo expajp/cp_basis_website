@@ -5,6 +5,8 @@
 ソートさせてもいいけどめんどくさいので
  */
 
+/* 初期設定はCSVparse_common.jsにて */
+
 /* yearに指定された年のパネルを作成 */
 function getPanelForYear(rowDivArray){
     var returnPanel = $("<div>").addClass("panel");

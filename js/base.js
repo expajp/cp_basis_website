@@ -21,20 +21,21 @@ $(document).ready(function(){
 	});
     
     /*ページ内リンクのアニメーション化*/
-    $("#main a[href^=#]").click(function() {
+    $("#main a[href^=#]:not(#pagetop)").click(function() {
         var speed = 500;
         var href= $(this).attr("href");
-        console.log("href: " + href);
         
         var parts = href.split("#");
         var target = parts[1];
-        console.log("target: " + target);
         
-        var position = Math.max($('a[name='+target+']').offset().top-45, 0);
+        if(target != ""){
+            var position = Math.max($('a[name='+target+']').offset().top-45, 0);
 
-        /*スクロール*/
-        $('body, html').animate({scrollTop:position}, speed, 'swing');
-        return false;
+            /*スクロール*/
+            $('body, html').animate({scrollTop:position}, speed, 'swing');
+            return false;
+        }
+
     });
     
 });
